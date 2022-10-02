@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+.vsconfig
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+UserSettings/EditorUserSettings.asset
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
