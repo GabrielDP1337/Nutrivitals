@@ -23,18 +23,18 @@ public class GameManager : MonoBehaviour
     {
 
         Dictionary<string, string> goFoods = new();
-        goFoods.Add("Bread", "Bread has calories and carbohydrates that help keep the body moving.");
+        goFoods.Add("Bread", "It has calories and carbohydrates that help keep the body moving.");
         goFoods.Add("Rice", "It's high in carbohydrates that gives the body energy.");
 
         Dictionary<string, string> growFoods = new();
-        growFoods.Add("Egg", "Has a lot of protein, vitamins, and minerals that helps body grow.");
-        growFoods.Add("Chicken", "High in protein so it keeps the body strong.");
-        growFoods.Add("Cheese", "Have calcium that keeps the bones strong.");
+        growFoods.Add("Egg", "Have a lot of protein, vitamins, and minerals that help the body grow.");
+        growFoods.Add("Chicken", "It's high in protein, so it keeps the body strong.");
+        growFoods.Add("Cheese", "Has calcium that keeps the bones strong.");
 
         Dictionary<string, string> glowFoods = new();
         glowFoods.Add("Apple", "Full of vitamins and antioxidants that can protect the body from diseases.");
-        glowFoods.Add("Pumpkin", "High in potassium and vitamins that makes muscles function.");
-        glowFoods.Add("Banana", "Rich in potassium and moisture that helps our skin soft and young.");
+        glowFoods.Add("Pumpkin", "High in potassium and vitamins that make muscles function.");
+        glowFoods.Add("Banana", "Rich in potassium and moisture, which helps our skin stay soft and young.");
 
         foods.Add("Go Food", goFoods);
         foods.Add("Glow Food", glowFoods);
