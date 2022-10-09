@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI foodDescriptionUIText;
     [SerializeField] private GameObject viewInformationSection;
     [SerializeField] private Sprite[] foodResources;
+    [SerializeField] private Animator animator;
+
+    public enum InformationStates { idle, viewInformationSection};
+    public InformationStates informationState = InformationStates.idle;
 
     Dictionary<string, Dictionary<string, string>> foods = new();
 
@@ -21,13 +25,18 @@ public class GameManager : MonoBehaviour
     {
 
         Dictionary<string, string> goFoods = new();
-        goFoods.Add("Apple", "Apple is a Go Food");
-
-        Dictionary<string, string> glowFoods = new();
-        glowFoods.Add("", "");
+        goFoods.Add("Bread", "Lorem epsum");
+        goFoods.Add("Rice", "Lorem epsum");
 
         Dictionary<string, string> growFoods = new();
-        growFoods.Add("", "");
+        growFoods.Add("Egg", "Lorem epsum");
+        growFoods.Add("Chicken", "Lorem epsum");
+        growFoods.Add("Cheese", "Lorem epsum");
+
+        Dictionary<string, string> glowFoods = new();
+        glowFoods.Add("Apple", "Lorem epsum");
+        glowFoods.Add("Pumpkin", "Lorem epsum");
+        glowFoods.Add("Banana", "Lorem epsum");
 
         foods.Add("Go Food", goFoods);
         foods.Add("Glow Food", glowFoods);
@@ -78,6 +87,17 @@ public class GameManager : MonoBehaviour
         }
 
         foodNameUIText.text = _fruit;
+
+        informationState = InformationStates.viewInformationSection;
+        animator.SetInteger("informationState", (int)informationState);
+
+    }
+
+    public void OnBack()
+    {
+
+        informationState = InformationStates.idle;
+        animator.SetInteger("informationState", (int) informationState);
 
     }
 
