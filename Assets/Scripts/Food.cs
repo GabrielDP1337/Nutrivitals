@@ -1,24 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Food : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Rotate(2 * Time.deltaTime, 1, 0);
-    }
-
-    private void OnTriggerEnter(Collider other){
-        if(other.tag == "Player"){
-            Destroy(gameObject);
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce1a40deabd8509ad9832b64aa1d7ede8be179eb9ca85ec2c764310a4c35ac1d
+size 457

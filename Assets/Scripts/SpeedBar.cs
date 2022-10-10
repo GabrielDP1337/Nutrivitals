@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class SpeedBar : MonoBehaviour
-{
-    // Start is called before the first frame update
-    private Slider slider;
-    
-    private float targetProgress = PlayerController.speedBarValue;
-
-    private void Awake()
-    {
-        slider = gameObject.GetComponent<Slider>();
-    }
-
-    void Start()
-    {
-        IncrementProgress(0.75f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        slider.value = PlayerController.speedBarValue;
-    }
-
-    public void IncrementProgress(float newProgress)
-    {
-        targetProgress = slider.value + newProgress;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:111366c3373cbbd07bdedb7a2f5a8ed5a652686583cd30ca345893f8984f9925
+size 694
